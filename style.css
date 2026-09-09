@@ -615,12 +615,15 @@ a {
 
 }
 
-/* Publications page */
+/* =========================================
+   PUBLICATIONS PAGE
+   ========================================= */
 
 .page-container {
-    max-width: 1000px;
+    width: min(1400px, calc(100% - 48px));
+    max-width: none;
     margin: 0 auto;
-    padding: 80px 30px;
+    padding: 60px 0;
 }
 
 .page-container h1 {
@@ -636,6 +639,7 @@ a {
 }
 
 .publication-section {
+    width: 100%;
     margin-bottom: 55px;
 }
 
@@ -646,59 +650,155 @@ a {
     border-bottom: 2px solid #eee;
 }
 
+/* -----------------------------------------
+   Individual publication
+   ----------------------------------------- */
+
 .publication {
+    /*
+     * IMPORTANT:
+     * Override the grid layout from the main page.
+     * There is no year column on this page.
+     */
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
     margin-bottom: 35px;
-    padding-left: 20px;
+    padding: 25px 0 30px 20px;
+
     border-left: 3px solid #eee;
+    border-bottom: 1px solid #eee;
 }
+
+/* Publication title */
 
 .publication h3 {
-    font-size: 20px;
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
+    font-size: 22px;
     line-height: 1.45;
-    margin-bottom: 10px;
+
+    margin: 0 0 10px 0;
 }
+
+/* Authors */
 
 .authors {
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
     margin: 5px 0;
+
     color: #444;
+
+    line-height: 1.5;
 }
 
+/* Journal / conference */
+
 .venue {
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
     margin: 5px 0 12px;
+
     color: #666;
     font-style: italic;
+
+    line-height: 1.5;
+}
+
+/* Links */
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    margin-top: 15px;
 }
 
 .publication-links a {
-    margin-right: 15px;
+    margin-right: 0;
+
     font-size: 14px;
     font-weight: 600;
 }
 
+/* -----------------------------------------
+   Publication content
+   ----------------------------------------- */
+
+.publication-content {
+    display: block;
+
+    width: 100%;
+    max-width: none;
+}
+
+/* Make sure nothing inside restricts the title */
+
+.publication-content h3,
+.publication-content p {
+    width: 100%;
+    max-width: none;
+}
+
+/* -----------------------------------------
+   Google Scholar section
+   ----------------------------------------- */
+
 .scholar-section {
+    width: 100%;
+
     margin-top: 70px;
     padding-top: 30px;
+
     border-top: 1px solid #eee;
 }
 
 .button {
     display: inline-block;
+
     margin-top: 15px;
     padding: 10px 18px;
+
     border-radius: 5px;
+
     text-decoration: none;
     font-weight: 600;
 }
 
-.publication-content {
-    width: 100%;
-    max-width: none;
-    flex: 1;
-}
+/* -----------------------------------------
+   Mobile
+   ----------------------------------------- */
 
-.publication-content h3,
-.publication-content p {
-    max-width: none;
-}
+@media (max-width: 768px) {
 
+    .page-container {
+        width: calc(100% - 32px);
+        padding: 40px 0;
+    }
+
+    .page-container h1 {
+        font-size: 34px;
+    }
+
+    .publication h3 {
+        font-size: 20px;
+    }
+
+    .publication {
+        padding-left: 15px;
+    }
+}
 
