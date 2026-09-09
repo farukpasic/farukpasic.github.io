@@ -614,3 +614,78 @@ a {
     }
 
 }
+
+/* Publications page */
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.page-container h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-intro {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.publication-section {
+    margin-bottom: 55px;
+}
+
+.publication-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.publication {
+    margin-bottom: 35px;
+    padding-left: 20px;
+    border-left: 3px solid #eee;
+}
+
+.publication h3 {
+    font-size: 20px;
+    line-height: 1.45;
+    margin-bottom: 10px;
+}
+
+.authors {
+    margin: 5px 0;
+    color: #444;
+}
+
+.venue {
+    margin: 5px 0 12px;
+    color: #666;
+    font-style: italic;
+}
+
+.publication-links a {
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.scholar-section {
+    margin-top: 70px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
