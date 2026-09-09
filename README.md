@@ -1,1 +1,0 @@
-# farukpasic.github.io
