@@ -648,14 +648,15 @@ a {
 
 .publication {
     margin-bottom: 35px;
-    padding-left: 20px;
+    padding: 25px 20px;
     border-left: 3px solid #eee;
 }
 
 .publication h3 {
     font-size: 20px;
     line-height: 1.45;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    max-width: 850px;
 }
 
 .authors {
@@ -669,8 +670,12 @@ a {
     font-style: italic;
 }
 
+.publication-links {
+    margin-top: 10px;
+}
+
 .publication-links a {
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 14px;
     font-weight: 600;
 }
